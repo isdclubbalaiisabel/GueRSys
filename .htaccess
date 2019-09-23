@@ -1,0 +1,7 @@
+RewriteOptions inherit
+
+RewriteEngine on
+RewriteCond %{HTTP_HOST} ^grs\.balaiisabel\.com$ [OR]
+RewriteCond %{HTTP_HOST} ^www\.grs\.balaiisabel\.com$
+RewriteRule ^/?$ "http\:\/\/grs\.balaiisabel\.com\/index\.php" [R=301,L]
+
