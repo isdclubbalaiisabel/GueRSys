@@ -1,4 +1,3 @@
-
 <?php
 	session_start();
 	include "../../global_variables_for_mysql_connection.php";
@@ -6,6 +5,7 @@
 	if($_SESSION['attuid'] === null) {
 		header("location:set_phone_account.php");
 	}
+	
 	
 ?>
 

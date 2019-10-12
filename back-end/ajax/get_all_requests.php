@@ -4,10 +4,6 @@
 	include "../../global_variables_for_mysql_connection.php";
 
 	$dep = $_SESSION['dep'];
-
-	
-
-
 	$date_now = date('Y-m-d');
 	$result = array();
 

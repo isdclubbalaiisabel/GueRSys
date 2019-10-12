@@ -149,15 +149,15 @@
 											<label for="dept_code" class="col-3 col-lg-3 col-form-label text-right" id = "lbl1">Assign To</label>
 											<input type = 'hidden' value = '<?php echo $r;?>' name = 'r'/>
 											<div class="col-9 col-lg-9">
-												<select disabled="true" class="form-control"   id="assign_to" name="assign_to">
+												<select class="form-control" required=""  id="assign_to" name="assign_to">
 													
 												</select>
 											</div>
 										</div>
 									</div>
 								<div class="card-footer d-flex text-muted">
-									<div class="col-6 col-lg-6">
-										<button type="submit" id ="save_new" name = "save" class="btn btn-space btn-primary">Automatically Assign Attendant</button>
+									<div class="col-2 col-lg-2">
+										<button type="submit" id ="save_new" name = "save" class="btn btn-space btn-primary">Save</button>
 									</div>
 									<div class="col-10 col-lg-10" id = "message">
 										
@@ -368,6 +368,16 @@
 						$("#chg_att").show();
 						$("#assign_div").show();
 						$("#chg_att").html("<h2 class='display-4 text-center'>REQUEST FAILED</h2>");
+						$("#content_assign").hide();
+						$("#content_done").hide();
+						$("#save_new").hide();
+						$("#chg_att_done").hide();
+					}
+					else if(strMessage == 5){
+						$("#assign_div").html("<h2 class='display-4 text-center'>NO AVAILABLE ATTENDANTS</h2>");
+						$("#chg_att").show();
+						$("#assign_div").show();
+						$("#chg_att").html("<h2 class='display-4 text-center'>NO AVAILABLE ATTENDANTS</h2>");
 						$("#content_assign").hide();
 						$("#content_done").hide();
 						$("#save_new").hide();

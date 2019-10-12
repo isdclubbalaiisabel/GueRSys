@@ -1,6 +1,6 @@
 <?php
 	session_start();
-    //set
+    
 	include "../../global_variables_for_mysql_connection.php";
 
 	$dep = $_SESSION['dep'];

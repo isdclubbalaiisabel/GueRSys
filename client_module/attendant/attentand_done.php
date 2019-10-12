@@ -70,10 +70,10 @@ $r = $_GET['r'];
 											</div>
 										</div>
 										<div class="clearfix" style="height: 10px;clear: both;"></div>
-										<label class="col-lg-2 control-label" for="upass1">What is the issue? </label>
+										<label class="col-lg-2 control-label" for="upass1">Remarks </label>
 										<div class="col-lg-6">
 											<input type = "hidden" id = "rno" name = "rno" value = "<?php echo $r; ?>"class="form-control"/>
-											<textarea id = "details" name = "details" class="form-control" disabled="true"></textarea>
+											<textarea id = "details" name = "details" class="form-control"></textarea>
 										</div>
 									</div>
 								</div>
@@ -119,26 +119,6 @@ $r = $_GET['r'];
 
 		</script>
 
-		<script>
-				var addressOther = document.querySelectorAll('input[name="statusradio"]');
-				var addressField = document.getElementById('details');
-				var tempAddress = "";
-
-				for(var i = 0; i < addressOther.length; i++) {
-					addressOther[i].addEventListener("change", addressHandler);
-				}
-
-
-				function addressHandler() {
-					if(this.id == "notDone") {
-				  	addressField.disabled = false;
-				    addressField.value = tempAddress;
-				  } else {
-				    tempAddress = addressField.value;
-				  	addressField.value = "";
-				  	addressField.disabled = true;
-				  }
-				}
-		</script>
+	
 	</body>
 </html>

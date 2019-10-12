@@ -8,10 +8,10 @@
 	 //$database = "db_grs";
 	
     //WEBHOST
-    $servername = "grs.balaiisabel.com";
-    $username = "balaiisa_grs";
-    $password = "[isd2019*W0w]";
-    $database = "balaiisa_db_grs";
+    	 $servername = "grs.balaiisabel.com";
+    	 $username = "balaiisa_grs";
+    	 $password = "[isd2019*W0w]";
+    	 $database = "balaiisa_db_grs";
 	
 	$conn = mysqli_connect($servername, $username, $password, $database);
 

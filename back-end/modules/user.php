@@ -152,25 +152,19 @@
 									<div class="form-group row">
 										<label for="user_id" class="col-3 col-lg-3 col-form-label text-right">User Id</label>
 										<div class="col-9 col-lg-9">
-											<input name = "user_id" id="user_id" type="text" required="" placeholder="" class="form-control">
+											<input name = "user_id" id="user_id" type="text" required="" placeholder="User Id" class="form-control">
 										</div>
 									</div>
 									<div class="form-group row">
 										<label for="user_name" class="col-3 col-lg-3 col-form-label text-right">User Name</label>
 										<div class="col-9 col-lg-9">
-											<input name = "user_name" id="user_name" type="text" required="" placeholder="" class="form-control">
+											<input name = "user_name" id="user_name" type="text" required="" placeholder="Name" class="form-control">
 										</div>
 									</div>
 									<div class="form-group row">
 										<label for="pcode" class="col-3 col-lg-3 col-form-label text-right">Passcode</label>
 										<div class="col-9 col-lg-9">
-											<input name="pcode" id="pcode" type="password" data-parsley-min="1000" data-parsley-max="99999" required="" placeholder="" class="form-control">
-										</div>
-									</div>
-									<div class="form-group row">
-										<label for="user_name" class="col-3 col-lg-3 col-form-label text-right">Contact Number</label>
-										<div class="col-9 col-lg-9">
-											<input name = "contact_no" id="contact_no" type="text" required="" placeholder="" class="form-control">
+											<input name="pcode" id="pcode" type="password" data-parsley-min="1000" data-parsley-max="99999" required="" placeholder="Password" class="form-control">
 										</div>
 									</div>
 									<div class="form-group row">
@@ -392,7 +386,6 @@
 							$("#user_name").val(result.data[0][2]);
 							$("#access_code").val(result.data[0][3]);
 							$("#dept_code").val(result.data[0][5]);
-							$("#contact_no").val(result.data[0][6]);
 							if(result.data[0][4] == 1){
 								$("#status_active").prop("checked",true);
 							}else{

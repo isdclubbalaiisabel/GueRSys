@@ -25,10 +25,10 @@
 		mysqli_query($conn, "UPDATE tbl_guest_concern set status = 4 where guest_c_no = '$rno'") or die(mysqli_error($conn));
 
 		
-		$checkpending = mysqli_query($conn,"SELECT count(b.guest_c_no) FROM tbl_concern_movement as a,tbl_guest_concern as b WHERE b.status <= 3 AND a.assigned_to = '$uid' ");
+		$checkpending = mysqli_query($conn,"SELECT distinct b.guest_c_no FROM tbl_concern_movement as a,tbl_guest_concern as b WHERE b.status <= 3 AND assigned_to = '$uid' ");
 		$no_of_pending = mysqli_fetch_assoc($checkpending);
 
-		$pend = $no_of_pending["count(b.guest_c_no)"];
+		$pend = count($no_of_pending);
 
 		
 		if($status_radio == 1){
