@@ -34,3 +34,28 @@
 		
 
 ?>
+
+<!DOCTYPE html>
+<html>
+<body></body>
+<!-- The core Firebase JS SDK is always required and must be listed first -->
+<script src="https://www.gstatic.com/firebasejs/7.2.0/firebase-app.js"></script>
+
+<!-- TODO: Add SDKs for Firebase products that you want to use
+     https://firebase.google.com/docs/web/setup#available-libraries -->
+
+<script>
+  // Your web app's Firebase configuration
+  var firebaseConfig = {
+    apiKey: "AIzaSyAst-quFFgtcd5y3E3CY82qDW2Oy983N7Q",
+    authDomain: "grsnotifs.firebaseapp.com",
+    databaseURL: "https://grsnotifs.firebaseio.com",
+    projectId: "grsnotifs",
+    storageBucket: "grsnotifs.appspot.com",
+    messagingSenderId: "704879123352",
+    appId: "1:704879123352:web:feb6a478f0517c8f65a9ed"
+  };
+  // Initialize Firebase
+  firebase.initializeApp(firebaseConfig);
+</script>
+</html>
