@@ -253,18 +253,30 @@
 		<script>
 		$('#form').parsley();
 		</script>
-
-		<script src="https://cdn.onesignal.com/sdks/OneSignalSDK.js" async=""></script>
+		<script src='https://cdn.onesignal.com/sdks/OneSignalSDK.js' async=''></script>
 			<script>
 			  var OneSignal = window.OneSignal || [];
 			  OneSignal.push(function() {
 			    OneSignal.init({
-			      appId: "695fab03-f980-47e8-9d16-ce5be4774c1d",
+			      appId: '46aa99c6-3eae-46b1-8b71-8066805984f9',
 			      notifyButton: {
 			        enable: true,
 			      },
 			    });
 			  });
+
+			  OneSignal.push(function() {
+				  /* These examples are all valid */
+				  OneSignal.getUserId(function(userId) {
+				    console.log("OneSignal User ID:", userId);
+				    // (Output) OneSignal User ID: 270a35cd-4dda-4b3f-b04e-41d7463a2316    
+				  });
+				               
+				  OneSignal.getUserId().then(function(userId) {
+				    console.log("OneSignal User ID:", userId);
+				    // (Output) OneSignal User ID: 270a35cd-4dda-4b3f-b04e-41d7463a2316    
+				  });
+				});
 		</script>
 	
 
