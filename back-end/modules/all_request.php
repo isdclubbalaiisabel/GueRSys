@@ -258,7 +258,7 @@
 			  var OneSignal = window.OneSignal || [];
 			  OneSignal.push(function() {
 			    OneSignal.init({
-			      appId: '46aa99c6-3eae-46b1-8b71-8066805984f9',
+			      appId: '695fab03-f980-47e8-9d16-ce5be4774c1d',
 			      notifyButton: {
 			        enable: true,
 			      },
