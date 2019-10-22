@@ -1,1 +1,2 @@
 [02-Aug-2019 08:31:16 UTC] PHP Warning:  mysqli_connect(): (HY000/1045): Access denied for user 'root'@'localhost' (using password: NO) in /home/balaiisa/grs.balaiisabel.com/back-end/configs/connect_database.php on line 7
+[19-Oct-2019 13:55:37 UTC] PHP Warning:  mysqli_connect(): (HY000/2002): Connection refused in /home/balaiisa/repositories/GueRSys/global_variables_for_mysql_connection.php on line 16

@@ -9,7 +9,7 @@
 	$result = array();
 
     if($acc_type == 'SCOO'){
-       $query = mysqli_query($conn, "Select DISTINCT a.guest_c_no, a.room_code,c.concern_desc, a.details, a.date_requested, b.dept_code, d.remarks from tbl_guest_concern as a, tbl_concern_cate as b, tbl_concerns as c, tbl_concern_movement as d WHERE a.concern_no = c.concern_no AND c.cat_no = b.cat_no AND a.status = 5 AND a.guest_c_no = d.guest_c_no AND d.remarks IS NOT NULL ORDER BY date_requested DESC") or die(mysqli_error($conn));
+       $query = mysqli_query($conn, "Select DISTINCT a.guest_c_no, a.room_code,c.concern_desc, a.details, a.date_requested, b.dept_code, d.remarks from tbl_guest_concern as a, tbl_concern_cate as b, tbl_concerns as c, tbl_concern_movement as d WHERE a.concern_no = c.concern_no AND c.cat_no = b.cat_no AND a.status = 5 AND a.guest_c_no = d.guest_c_no ORDER BY date_requested DESC") or die(mysqli_error($conn));
     }
    elseif($acc_type == 'COOR'){
         $query = mysqli_query($conn, "Select DISTINCT a.guest_c_no, a.room_code,c.concern_desc, a.details, a.date_requested, b.dept_code from tbl_guest_concern as a, tbl_concern_cate as b, tbl_concerns as c WHERE a.concern_no = c.concern_no AND c.cat_no = b.cat_no  AND a.status AND b.dept_code = '$dep' AND a.status = 5 ORDER BY date_requested DESC") or die(mysqli_error($conn));

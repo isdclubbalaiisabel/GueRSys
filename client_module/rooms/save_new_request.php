@@ -27,7 +27,7 @@
 			        //LOCALHOST 
 			        // 'url' => "http://localhost/GueRSys/back-end/modules/all_request.php",
 			        //LIVE
-			        'url' => "grs.balaiisabel.com/back-end/modules/all_request.php",
+			        'url' => "http://grs.balaiisabel.com/back-end/modules/all_request.php",
 			        'data' => array(
 			            "foo" => "bar"
 			        ),
