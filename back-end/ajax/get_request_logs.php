@@ -32,7 +32,7 @@
 			</tr>
 		<?php
 		//mysqli_query($conn, "INSERT INTO tbl_concern_movement (guest_c_no, assigned_to, action_taken, datetime) VALUES('$r','','0',NOW())") or die(mysqli_error($conn));
-		mysqli_query($conn, "UPDATE tbl_guest_concern set status = 1 where guest_c_no = '$r'") or die(mysqli_error($conn));
+		//mysqli_query($conn, "UPDATE tbl_guest_concern set status = 1 where guest_c_no = '$r'") or die(mysqli_error($conn));
 	}
 	else{
 		

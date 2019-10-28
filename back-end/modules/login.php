@@ -78,7 +78,7 @@
 				{
 					
 					if(result == 1){
-						window.location = "../index.php";
+						window.location = "user.php";
 					}
 					else if (result == 2){
 						window.location = "all_request.php";
