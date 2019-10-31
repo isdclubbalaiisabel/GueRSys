@@ -39,62 +39,7 @@
 					<?php echo $rows[5];?>
 				</td>
 
-				<?php 
-					$query_stat = mysqli_query($conn, "SELECT * from tbl_concern_movement where guest_c_no = '".$rows[0]."' ORDER BY action_taken DESC LIMIT 1");
-					if(mysqli_num_rows($query_stat) == 0) {
-						?>
-						<td>
-							Pending
-						</td>
-						<?php
-					}
-					else{
-						$rowstat = mysqli_fetch_array($query_stat);
-							if($rowstat[3] == 0){
-								?>
-								<td>
-									Pending
-								</td>
-								<?php
-
-							}
-							else if($rowstat[3] == 1){
-								?>
-								<td>
-									Assigned
-								</td>
-								<?php
-
-							}
-							else if($rowstat[3] == 2){
-								?>
-								<td>
-									Attendant on the way
-								</td>
-								<?php
-								
-
-							}
-							else if($rowstat[3] == 3){
-								?>
-								<td>
-									Completed
-								</td>
-								<?php
-							}
-                            else if($rowstat[3] == 4){
-								?>
-								<td>
-									Rejected
-								</td>
-								<?php
-								
-
-							}
-						
-						
-					}
-				?>
+				
 			</tr>
 		
 		<?php

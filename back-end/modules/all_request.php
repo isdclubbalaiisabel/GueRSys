@@ -159,7 +159,6 @@
 														<th>Details</th>
 														<th>Date/Time Requested</th>
 														<th>Dept-in-Charge</th>
-														<th>Status</th>
 													</tr>
 												</thead>
 													
